@@ -1,3 +1,5 @@
+/* Общие стили */
+
 body {
   width: 1024px;
   margin: 0 auto;
@@ -8,13 +10,7 @@ a {
     color: inherit;
 }
 
-.header {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 2fr 1fr 2fr;
-    padding-inline: 50px;
-    padding-block: 92px;
-}
+/* Навигация */
 
 .nav--align-left {
     justify-self: flex-start;
@@ -43,14 +39,7 @@ a {
     text-decoration: none;
 }
 
-.header__logo-link {
-    width: 136px;
-    justify-self: center;
-}
-
-.header__logo-img {
-    display: block;
-}
+/* Контакты */
 
 .contacts {
     line-height: 1.35;
@@ -63,5 +52,24 @@ a {
 }
 
 .contacts__link {
+    display: block;
+}
+
+/* Стили шапки страницы */
+
+.header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr 2fr;
+    padding-inline: 50px;
+    padding-block: 92px;
+}
+
+.header__logo-link {
+    width: 136px;
+    justify-self: center;
+}
+
+.header__logo-img {
     display: block;
 }
