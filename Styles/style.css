@@ -23,8 +23,7 @@ a {
 }
 
 .nav__list--horizontal {
-    padding-inline-start: 30px;
-    gap: 30px;
+    gap: 28px;
 }
 
 .nav__item--no-marker {
@@ -32,11 +31,12 @@ a {
 }
 
 .nav__link {
-    text-decoration: underline;
+    border-bottom: 1px solid #000;
+    text-decoration: none;
 }
 
 .nav__link--no-underline {
-    text-decoration: none;
+    border: none;
 }
 
 /* Контакты */
@@ -53,6 +53,9 @@ a {
 
 .contacts__link {
     display: block;
+    width: fit-content;
+    border-bottom: 1px solid #000;
+    text-decoration: none;
 }
 
 /* Стили шапки страницы */
@@ -61,7 +64,7 @@ a {
     display: grid;
     align-items: center;
     grid-template-columns: 2fr 1fr 2fr;
-    padding-inline: 50px;
+    padding-inline: 25px;
     padding-block: 92px;
 }
 
@@ -72,4 +75,10 @@ a {
 
 .header__logo-img {
     display: block;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    gap: 180px;
 }
