@@ -82,3 +82,232 @@ a {
     flex-direction: column;
     gap: 180px;
 }
+
+/* Стили для Jumbotron */
+
+.jumbotron {
+    position: relative;
+    background: url("../images/cover.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.jumbotron__overlay {
+    position: absolute;
+    z-index: 1;
+    block-size: 100%;
+    inline-size: 100%;
+    background-color: rgba(0,0,0,0.6);
+    pointer-events: none;
+}
+
+.jumbotron__cover {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-inline: 50px;
+    padding-block: 165px 50px;
+    gap: 134px;
+}
+
+.jumbotron__title {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+    font-size: 100px;
+    font-weight: bold;
+    gap: 21px;
+}
+
+.jumbotron__text--left {
+    align-self: flex-start;
+}
+
+.jumbotron__text--center {
+    align-self: center;
+}
+
+.jumbotron__text--right {
+    align-self: flex-end;
+}
+
+.jumbotron__text--double-spacing {
+    letter-spacing: 60px;
+}
+
+.jumbotron__text--remove-spacing {
+    letter-spacing: 0px;
+}
+
+.jumbotron__text--line-high {
+    line-height: 1.15;
+}
+
+.jumbotron__subline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.jumbotron__subline-text {
+    align-self: center;
+    line-height: 1.28;
+    color: #fff;
+    text-transform: uppercase;
+    word-spacing: 19px;
+    font-size: 22px;
+}
+
+.jumbotron__subline-button {
+    border: 1px currentColor solid;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 22px;
+    padding-block: 11.5px;
+    padding-inline: 31.5px;
+}
+
+/* Стили для lots */
+
+.lots {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 25px;
+}
+
+.lots__title {
+    padding-block-end: 27px;
+    padding-inline-start: 40px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.lots__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.lots__card {
+    position: relative;
+}
+
+.lots__card-type-film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.lots__card-type-book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.lots__card-type-picture {
+  background-image: url(../images/card-lot-03.jpg);   
+}
+
+.lots__card-overlay {
+    position: absolute;
+    z-index: 1;
+    block-size: 100%;
+    inline-size: 100%;
+    background-color: rgba(0,0,0,0.6);
+    pointer-events: none;
+}
+
+.lots__card-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-inline: 37px;
+    padding-block: 50px;
+    gap: 20px;
+}
+
+.lots__card-title {
+    line-height: 1.2;
+    color: #fff;
+    text-transform: uppercase;
+    font-size:22px;
+    font-weight: bold;
+}
+
+.lots__card-link {
+     text-underline-offset: 3px;
+}
+
+.lots__card-description {
+    line-height: 1.2;
+    color: #fff;
+    font-size: 20px;
+}
+
+.lots__more-link-container {
+    padding-block-start: 30px;
+    padding-inline-start: 40px;
+}
+
+.lots__more-link {
+    width: fit-content;
+    border-bottom: 1px solid #000;
+    font-size: 20px;
+    text-decoration: none;    
+}
+
+/* Стили для about */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 8px 20px;
+    padding-inline: 25px;
+}
+
+.about__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    block-size: 240px;
+    inline-size: 240px;
+    border-radius: 50%;
+    background-color: #000;
+    justify-self: center;
+}
+
+.about__logo-img {
+   width: 148px; 
+}
+
+.about__title {
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.about__description {
+    line-height: 1.24;
+    font-size: 20px;
+}
