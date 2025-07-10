@@ -77,6 +77,12 @@ a {
     display: block;
 }
 
+.main__content {
+    display: flex;
+    flex-direction: column;
+    gap: 180px;
+}
+
 /* Стили для Jumbotron */
 
 .jumbotron {
@@ -173,7 +179,6 @@ a {
 .lots {
     display: flex;
     flex-direction: column;
-    padding-block-start: 180px;
     padding-inline: 25px;
 }
 
@@ -260,4 +265,49 @@ a {
     border-bottom: 1px solid #000;
     font-size: 20px;
     text-decoration: none;    
+}
+
+/* Стили для about */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 8px 20px;
+    padding-inline: 25px;
+}
+
+.about__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    block-size: 240px;
+    inline-size: 240px;
+    border-radius: 50%;
+    background-color: #000;
+    justify-self: center;
+}
+
+.about__logo-img {
+   width: 148px; 
+}
+
+.about__title {
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.about__description {
+    line-height: 1.24;
+    font-size: 20px;
 }
