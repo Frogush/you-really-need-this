@@ -39,6 +39,12 @@ a {
     border: none;
 }
 
+.nav__list--vertical {
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
 /* Контакты */
 
 .contacts {
@@ -310,4 +316,22 @@ a {
 .about__description {
     line-height: 1.24;
     font-size: 20px;
+}
+
+/* Стили для подвала */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 50px;
+    padding-block: 180px 92px;
+}
+
+.footer__social-media {
+    display: flex;
+    gap: 48px;
+}
+
+.footer__social-media-img {
+    block-size: 48px;
 }
