@@ -14,29 +14,51 @@
         <nav class="nav nav--align-left">
             <ul class="nav__list nav__list--horizontal">
                 <li class="nav__item nav__item--no-marker">
-                    <a class="nav__link nav__link--no-underline" href="#no_scroll">Главная</a>
+                    <a class="nav__link nav__link--no-underline" href="#no_scroll">главная</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#no_scroll">О нас</a>
+                    <a class="nav__link" href="#no_scroll">посмотреть лоты</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#no_scroll">Контакты</a>
+                    <a class="nav__link" href="#no_scroll">об аукционе</a>
                 </li>
             </ul>
         </nav>
 
-        <a class="header__logo-link">
+        <a class="header__logo-link" href="#no_scroll">
             <img class="header__logo-img" src="./Images/logo-black.svg" alt="Логотип с надписью оно тебе надо">
         </a>
 
         <div class="contacts contacts--align-right">
             <a class="contacts__link" href="tel:+9995555555">+9 999 555 5555</a>
             <a class="contacts__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-            <p class="contacts__address">наб. Принсенграхт 263<br>–265, Амстердам</p>
+            <p class="contacts__address">наб. Принсенграхт 263–<br>265, Амстердам</p>
         </div>
     </header>
     <main>
-        <!-- Content -->
+        <!-- Jumbotron: большой яркий блок для ключевого приветствия или важного сообщения -->
+        <section class="jumbotron">
+            <div class="jumbotron__overlay"></div>
+
+            <div class="jumbotron__cover">
+                <h1 class="jumbotron__title">
+                    <span class="jumbotron__text jumbotron__text--left">о<span class="jumbotron__text--double-spacing">н<span class="jumbotron__text--remove-spacing">о</span></span></span>
+                    <span class="jumbotron__text jumbotron__text--center jumbotron__text--line-high">те<span class="jumbotron__text--double-spacing">б<span class="jumbotron__text--remove-spacing">е</span></span></span>
+                    <span class="jumbotron__text jumbotron__text--right"><span class="jumbotron__text--double-spacing">н</span>ад<span class="jumbotron__text--remove-spacing">о</span></span>
+                </h1>
+
+                <div class="jumbotron__subline">
+                    <p class="jumbotron__subline-text">Аукцион вещей, в которые никто не верил</p>
+                    <button class="jumbotron__subline-button">Сделать ставку</button>
+                </div>
+            </div>
+        </section>
+        <section class="lots">
+            <!-- Content -->
+        </section>
+        <section class="about">
+            <!-- Content -->
+        </section>
     </main>
     <footer>
         <!-- Content -->

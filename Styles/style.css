@@ -1,3 +1,5 @@
+/* Общие стили */
+
 body {
   width: 1024px;
   margin: 0 auto;
@@ -8,13 +10,7 @@ a {
     color: inherit;
 }
 
-.header {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 2fr 1fr 2fr;
-    padding-inline: 50px;
-    padding-block: 92px;
-}
+/* Навигация */
 
 .nav--align-left {
     justify-self: flex-start;
@@ -27,8 +23,7 @@ a {
 }
 
 .nav__list--horizontal {
-    padding-inline-start: 30px;
-    gap: 30px;
+    gap: 28px;
 }
 
 .nav__item--no-marker {
@@ -36,21 +31,15 @@ a {
 }
 
 .nav__link {
-    text-decoration: underline;
-}
-
-.nav__link--no-underline {
+    border-bottom: 1px solid #000;
     text-decoration: none;
 }
 
-.header__logo-link {
-    width: 136px;
-    justify-self: center;
+.nav__link--no-underline {
+    border: none;
 }
 
-.header__logo-img {
-    display: block;
-}
+/* Контакты */
 
 .contacts {
     line-height: 1.35;
@@ -64,4 +53,117 @@ a {
 
 .contacts__link {
     display: block;
+    width: fit-content;
+    border-bottom: 1px solid #000;
+    text-decoration: none;
+}
+
+/* Стили шапки страницы */
+
+.header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr 2fr;
+    padding-inline: 25px;
+    padding-block: 92px;
+}
+
+.header__logo-link {
+    width: 136px;
+    justify-self: center;
+}
+
+.header__logo-img {
+    display: block;
+}
+
+/* Стили для Jumbotron */
+
+.jumbotron {
+    position: relative;
+    background: url("../images/cover.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.jumbotron__overlay {
+    position: absolute;
+    z-index: 1;
+    block-size: 100%;
+    inline-size: 100%;
+    background-color: rgba(0,0,0,0.6);
+    pointer-events: none;
+}
+
+.jumbotron__cover {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-inline: 50px;
+    padding-block: 165px 50px;
+    gap: 134px;
+}
+
+.jumbotron__title {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+    font-size: 100px;
+    font-weight: bold;
+    gap: 21px;
+}
+
+.jumbotron__text--left {
+    align-self: flex-start;
+}
+
+.jumbotron__text--center {
+    align-self: center;
+}
+
+.jumbotron__text--right {
+    align-self: flex-end;
+}
+
+.jumbotron__text--double-spacing {
+    letter-spacing: 60px;
+}
+
+.jumbotron__text--remove-spacing {
+    letter-spacing: 0px;
+}
+
+.jumbotron__text--line-high {
+    line-height: 1.15;
+}
+
+.jumbotron__subline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.jumbotron__subline-text {
+    align-self: center;
+    line-height: 1.28;
+    color: #fff;
+    text-transform: uppercase;
+    word-spacing: 19px;
+    font-size: 22px;
+}
+
+.jumbotron__subline-button {
+    border: 1px currentColor solid;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 22px;
+    padding-block: 11.5px;
+    padding-inline: 31.5px;
 }
