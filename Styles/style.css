@@ -48,12 +48,12 @@ a {
 /* Контакты */
 
 .contacts {
-    line-height: 1.35;
+    line-height: 1.243;
     font-size: 18px;
 }
 
 .contacts--align-right {
-    padding-inline-end: 35px;
+    padding-inline-end: 30px;
     justify-self: flex-end;
 }
 
@@ -164,7 +164,7 @@ a {
     line-height: 1.28;
     color: #fff;
     text-transform: uppercase;
-    word-spacing: 19px;
+    word-spacing: 18px;
     font-size: 22px;
 }
 
@@ -189,11 +189,11 @@ a {
 }
 
 .lots__title {
-    padding-block-end: 27px;
     padding-inline-start: 40px;
     text-transform: uppercase;
     font-size: 40px;
     font-weight: bold;
+    padding-block: 6px 27px;
 
 }
 
@@ -277,9 +277,10 @@ a {
 
 .about {
     display: grid;
+    padding-block-start: 5px;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto auto;
-    gap: 8px 20px;
+    gap: 6px 30px;
     padding-inline: 25px;
 }
 
@@ -314,21 +315,22 @@ a {
 }
 
 .about__description {
-    line-height: 1.24;
+    line-height: 1.2;
     font-size: 20px;
 }
 
 /* Стили для подвала */
 
 .footer {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
     padding-inline: 50px;
-    padding-block: 180px 92px;
+    padding-block: 183px 92px;
 }
 
 .footer__social-media {
     display: flex;
+    justify-self: flex-end;
     gap: 48px;
 }
 
