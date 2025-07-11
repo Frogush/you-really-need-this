@@ -1,7 +1,7 @@
 /* Общие стили */
 
 body {
-  width: 1024px;
+  /* width: 1024px; */
   margin: 0 auto;
   font-family: Raleway, sans-serif;
 }
@@ -11,6 +11,10 @@ a {
 }
 
 /* Навигация */
+
+.nav {
+    display: flex;
+}
 
 .nav--align-left {
     justify-self: flex-start;
@@ -23,7 +27,7 @@ a {
 }
 
 .nav__list--horizontal {
-    gap: 28px;
+    gap: 26px;
 }
 
 .nav__item--no-marker {
@@ -45,6 +49,16 @@ a {
     gap: 5px;
 }
 
+@media (max-width: 1024px) {
+    .nav {
+        justify-self: center;
+    }
+
+    .nav__list {
+        font-size: 13px;
+    }
+}
+
 /* Контакты */
 
 .contacts {
@@ -64,6 +78,12 @@ a {
     text-decoration: none;
 }
 
+@media (max-width: 1024px) {
+    .contacts {
+        display: none;
+    }
+}
+
 /* Стили шапки страницы */
 
 .header {
@@ -72,6 +92,17 @@ a {
     grid-template-columns: 2fr 1fr 2fr;
     padding-inline: 25px;
     padding-block: 92px;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+        padding-inline: 30px;
+        padding-block: 30px 40px;
+        gap: 30px;
+    }
 }
 
 .header__logo-link {
@@ -175,6 +206,7 @@ a {
     background-color: transparent;
     cursor: pointer;
     text-transform: uppercase;
+    white-space: nowrap;
     font-family: inherit;
     font-size: 22px;
     padding-block: 11.5px;
