@@ -55,7 +55,9 @@ a {
     }
 
     .nav__list {
+        flex-direction: row;
         font-size: 13px;
+        gap: 20px;
     }
 }
 
@@ -79,7 +81,7 @@ a {
 }
 
 @media (max-width: 1024px) {
-    .contacts {
+    .header__contacts {
         display: none;
     }
 }
@@ -121,6 +123,13 @@ a {
     gap: 180px;
 }
 
+@media (max-width: 1024px) {
+    .main__content {
+        gap: 60px;
+    }
+}
+
+
 /* Стили для Jumbotron */
 
 .jumbotron {
@@ -151,6 +160,13 @@ a {
     gap: 134px;
 }
 
+@media (max-width: 1024px) {
+    .jumbotron__cover {
+        padding-inline: 25px;
+        padding-block: 50px 25px;
+    }
+}
+
 .jumbotron__title {
     display: flex;
     flex-direction: column;
@@ -160,6 +176,14 @@ a {
     font-size: 100px;
     font-weight: bold;
     gap: 21px;
+}
+
+@media (max-width: 1024px) {
+    .jumbotron__title {
+        letter-spacing: 14.4px;
+        font-size: 48px;
+        gap: 10px;
+    }
 }
 
 .jumbotron__text--left {
@@ -178,6 +202,12 @@ a {
     letter-spacing: 60px;
 }
 
+@media (max-width: 1024px) {
+    .jumbotron__text--double-spacing {
+        letter-spacing: 28.8px;
+    }
+}
+
 .jumbotron__text--remove-spacing {
     letter-spacing: 0px;
 }
@@ -191,6 +221,13 @@ a {
     justify-content: space-between;
 }
 
+@media (max-width: 1024px) {
+    .jumbotron__subline {
+        align-items: center;
+        gap: 35px;
+    }
+}
+
 .jumbotron__subline-text {
     align-self: center;
     line-height: 1.28;
@@ -198,6 +235,14 @@ a {
     text-transform: uppercase;
     word-spacing: 18px;
     font-size: 22px;
+}
+
+@media (max-width: 1024px) {
+    .jumbotron__subline-text {
+        line-height: 2.33;
+        word-spacing: 10px;
+        font-size: 12px;
+    }
 }
 
 .jumbotron__subline-button {
@@ -213,12 +258,27 @@ a {
     padding-inline: 31.5px;
 }
 
+@media (max-width: 1024px) {
+    .jumbotron__subline-button {
+        line-height: 1;
+        font-size: 14px;
+        padding-block: 6px;
+        padding-inline: 18px;
+    }
+}
+
 /* Стили для lots */
 
 .lots {
     display: flex;
     flex-direction: column;
     padding-inline: 25px;
+}
+
+@media (max-width: 1024px) {
+    .lots {
+        padding-inline: 33.5px;
+    }
 }
 
 .lots__title {
@@ -230,10 +290,23 @@ a {
 
 }
 
+@media (max-width: 1024px) {
+    .lots__title {
+        padding-inline-start: 25px;
+    }
+}
+
 .lots__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
+}
+
+@media (max-width: 1024px) {
+    .lots__grid {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, 1fr);
+    }
 }
 
 .lots__card {
@@ -299,6 +372,12 @@ a {
     padding-inline-start: 40px;
 }
 
+@media (max-width: 1024px) {
+    .lots__more-link-container {
+        padding-inline-start: 25px;
+    }
+}
+
 .lots__more-link {
     width: fit-content;
     border-bottom: 1px solid #000;
@@ -315,6 +394,14 @@ a {
     grid-template-rows: auto auto;
     gap: 6px 30px;
     padding-inline: 25px;
+}
+
+@media (max-width: 1024px) {
+    .about {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        gap: 39px;
+    }
 }
 
 .about__logo {
@@ -339,12 +426,25 @@ a {
     font-weight: bold;
 }
 
+@media (max-width: 1024px) {
+    .about__title {
+        justify-self: center;
+    }
+}
+
 .about__content {
     display: flex;
     flex-direction: column;
     gap: 24px;
     grid-column: 2;
     grid-row: 2;
+}
+
+@media (max-width: 1024px) {
+    .about__content {
+        grid-column: auto;
+        grid-row: auto;
+    }
 }
 
 .about__description {
