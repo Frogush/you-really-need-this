@@ -1,7 +1,7 @@
 /* Общие стили */
 
 body {
-  width: 1024px;
+  /* width: 1024px; */
   margin: 0 auto;
   font-family: Raleway, sans-serif;
 }
@@ -11,6 +11,10 @@ a {
 }
 
 /* Навигация */
+
+.nav {
+    display: flex;
+}
 
 .nav--align-left {
     justify-self: flex-start;
@@ -23,7 +27,7 @@ a {
 }
 
 .nav__list--horizontal {
-    gap: 28px;
+    gap: 26px;
 }
 
 .nav__item--no-marker {
@@ -45,6 +49,18 @@ a {
     gap: 5px;
 }
 
+@media (max-width: 1024px) {
+    .nav {
+        justify-self: center;
+    }
+
+    .nav__list {
+        flex-direction: row;
+        font-size: 13px;
+        gap: 20px;
+    }
+}
+
 /* Контакты */
 
 .contacts {
@@ -64,6 +80,12 @@ a {
     text-decoration: none;
 }
 
+@media (max-width: 1024px) {
+    .header__contacts {
+        display: none;
+    }
+}
+
 /* Стили шапки страницы */
 
 .header {
@@ -72,6 +94,17 @@ a {
     grid-template-columns: 2fr 1fr 2fr;
     padding-inline: 25px;
     padding-block: 92px;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+        padding-inline: 30px;
+        padding-block: 30px 40px;
+        gap: 30px;
+    }
 }
 
 .header__logo-link {
@@ -89,6 +122,13 @@ a {
     flex-direction: column;
     gap: 180px;
 }
+
+@media (max-width: 1024px) {
+    .main__content {
+        gap: 60px;
+    }
+}
+
 
 /* Стили для Jumbotron */
 
@@ -120,6 +160,13 @@ a {
     gap: 134px;
 }
 
+@media (max-width: 1024px) {
+    .jumbotron__cover {
+        padding-inline: 25px;
+        padding-block: 50px 25px;
+    }
+}
+
 .jumbotron__title {
     display: flex;
     flex-direction: column;
@@ -129,6 +176,14 @@ a {
     font-size: 100px;
     font-weight: bold;
     gap: 21px;
+}
+
+@media (max-width: 1024px) {
+    .jumbotron__title {
+        letter-spacing: 14.4px;
+        font-size: 48px;
+        gap: 10px;
+    }
 }
 
 .jumbotron__text--left {
@@ -147,6 +202,12 @@ a {
     letter-spacing: 60px;
 }
 
+@media (max-width: 1024px) {
+    .jumbotron__text--double-spacing {
+        letter-spacing: 28.8px;
+    }
+}
+
 .jumbotron__text--remove-spacing {
     letter-spacing: 0px;
 }
@@ -160,6 +221,13 @@ a {
     justify-content: space-between;
 }
 
+@media (max-width: 1024px) {
+    .jumbotron__subline {
+        align-items: center;
+        gap: 35px;
+    }
+}
+
 .jumbotron__subline-text {
     align-self: center;
     line-height: 1.28;
@@ -169,16 +237,34 @@ a {
     font-size: 22px;
 }
 
+@media (max-width: 1024px) {
+    .jumbotron__subline-text {
+        line-height: 2.33;
+        word-spacing: 10px;
+        font-size: 12px;
+    }
+}
+
 .jumbotron__subline-button {
     border: 1px currentColor solid;
     color: #fff;
     background-color: transparent;
     cursor: pointer;
     text-transform: uppercase;
+    white-space: nowrap;
     font-family: inherit;
     font-size: 22px;
     padding-block: 11.5px;
     padding-inline: 31.5px;
+}
+
+@media (max-width: 1024px) {
+    .jumbotron__subline-button {
+        line-height: 1;
+        font-size: 14px;
+        padding-block: 6px;
+        padding-inline: 18px;
+    }
 }
 
 /* Стили для lots */
@@ -187,6 +273,12 @@ a {
     display: flex;
     flex-direction: column;
     padding-inline: 25px;
+}
+
+@media (max-width: 1024px) {
+    .lots {
+        padding-inline: 33.5px;
+    }
 }
 
 .lots__title {
@@ -198,10 +290,23 @@ a {
 
 }
 
+@media (max-width: 1024px) {
+    .lots__title {
+        padding-inline-start: 25px;
+    }
+}
+
 .lots__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
+}
+
+@media (max-width: 1024px) {
+    .lots__grid {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, 1fr);
+    }
 }
 
 .lots__card {
@@ -267,6 +372,12 @@ a {
     padding-inline-start: 40px;
 }
 
+@media (max-width: 1024px) {
+    .lots__more-link-container {
+        padding-inline-start: 25px;
+    }
+}
+
 .lots__more-link {
     width: fit-content;
     border-bottom: 1px solid #000;
@@ -283,6 +394,14 @@ a {
     grid-template-rows: auto auto;
     gap: 6px 30px;
     padding-inline: 25px;
+}
+
+@media (max-width: 1024px) {
+    .about {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        gap: 39px;
+    }
 }
 
 .about__logo {
@@ -307,12 +426,25 @@ a {
     font-weight: bold;
 }
 
+@media (max-width: 1024px) {
+    .about__title {
+        justify-self: center;
+    }
+}
+
 .about__content {
     display: flex;
     flex-direction: column;
     gap: 24px;
     grid-column: 2;
     grid-row: 2;
+}
+
+@media (max-width: 1024px) {
+    .about__content {
+        grid-column: auto;
+        grid-row: auto;
+    }
 }
 
 .about__description {
@@ -329,10 +461,38 @@ a {
     padding-block: 183px 92px;
 }
 
+@media (max-width: 1024px) {
+    .footer {
+        grid-template-columns: auto;
+        padding-block: 83px 30px;
+        gap: 60px;
+        padding-inline: 42px;
+    }
+    
+    .footer__nav {
+        order: 1;
+    }
+
+    .footer__contacts {
+        display: flex;
+        align-items: center;
+        align-self: center;
+        flex-direction: column;
+        order: 3;
+    }
+}
+
 .footer__social-media {
     display: flex;
     justify-self: flex-end;
     gap: 48px;
+}
+
+@media (max-width: 1024px) {
+    .footer__social-media {
+        order: 2;
+        justify-self: center;
+    }
 }
 
 .footer__social-media-img {
