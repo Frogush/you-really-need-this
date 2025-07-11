@@ -75,6 +75,7 @@ a {
 }
 
 .header__logo-link {
+    position: relative;
     width: 136px;
     justify-self: center;
 }
@@ -336,4 +337,51 @@ a {
 
 .footer__social-media-img {
     block-size: 48px;
+}
+
+/* Hover and Focus */
+
+.link:hover {
+    border-color: currentColor;
+    color: #fff;
+    background-color: #000;
+}
+
+.link:focus {
+    outline: none;
+}
+
+.link:focus-visible {
+    border-color: #fff;
+    outline: 1px solid #000;
+    outline-offset: 1px;
+}
+
+.header__logo-link:focus {
+    outline: none;
+}
+
+.header__logo-link:focus-visible::after {
+    position: absolute;
+    top: -7px;
+    right: -5px;
+    bottom: -2px;
+    left: -2px;
+    border: 1px solid #000;
+    content: '';
+    pointer-events: none;
+}
+
+.jumbotron__subline-button:hover {
+    color:#000;
+    background-color: #fff;
+}
+
+.jumbotron__subline-button:focus {
+    outline: none;
+}
+
+.jumbotron__subline-button:focus-visible {
+    outline: 1px solid #fff;
+    outline-offset: 1px;
 }
