@@ -559,6 +559,10 @@ a {
     padding-block: 183px 92px;
 }
 
+.footer__nav {
+    justify-self: center;
+}
+
 @media (max-width: 1024px) {
     .footer {
         grid-template-columns: auto;
@@ -591,10 +595,6 @@ a {
         order: 2;
         justify-self: center;
     }
-}
-
-.footer__social-media-img {
-    block-size: 48px;
 }
 
 /* Hover and Focus */
