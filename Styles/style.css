@@ -133,12 +133,36 @@ a {
 /* Стили для Jumbotron */
 
 .jumbotron {
-    position: relative;
-    background: url("../images/cover.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  position: relative;
+  background-image: url("../Images/cover.jpg"); /* fallback */
+  background-image: image-set(
+    url("../Images/cover.avif") type("image/avif") 1x,
+    url("../Images/cover@2.avif") type("image/avif") 2x,
+    url("../Images/cover.webp") type("image/webp") 1x,
+    url("../Images/cover@2.webp") type("image/webp") 2x,
+    url("../Images/cover.jpg") type("image/jpeg") 1x,
+    url("../Images/cover@2.jpg") type("image/jpeg") 2x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
+@media (max-width: 768px) {
+  .jumbotron {
+    background-image: url("../Images/cover-mobile.jpg");
+
+    background-image: image-set(
+      url("../Images/cover-mobile.avif") type("image/avif") 1x,
+      url("../Images/cover-mobile@2.avif") type("image/avif") 2x,
+      url("../Images/cover-mobile.webp") type("image/webp") 1x,
+      url("../Images/cover-mobile@2.webp") type("image/webp") 2x,
+      url("../Images/cover-mobile.jpg") type("image/jpeg") 1x,
+      url("../Images/cover-mobile@2.jpg") type("image/jpeg") 2x
+    );
+  }
+}
+
 
 .jumbotron__overlay {
     position: absolute;
@@ -314,17 +338,90 @@ a {
     position: relative;
 }
 
+/* ========== ДЕСКТОП ========== */
+
 .lots__card-type-film {
-  background-image: url(../images/card-lot-01.jpg);
+  background-image: url(../Images/card-lot-01.jpg);
+
+  background-image: image-set(
+    url(../Images/card-lot-01.avif) type("image/avif") 1x,
+    url(../Images/card-lot-01@2.avif) type("image/avif") 2x,
+    url(../Images/card-lot-01.webp) type("image/webp") 1x,
+    url(../Images/card-lot-01@2.webp) type("image/webp") 2x,
+    url(../Images/card-lot-01.jpg) type("image/jpeg") 1x,
+    url(../Images/card-lot-01@2.jpg) type("image/jpeg") 2x
+  );
 }
 
 .lots__card-type-book {
-  background-image: url(../images/card-lot-02.jpg);
+  background-image: url(../Images/card-lot-02.jpg);
+
+  background-image: image-set(
+    url(../Images/card-lot-02.avif) type("image/avif") 1x,
+    url(../Images/card-lot-02@2.avif) type("image/avif") 2x,
+    url(../Images/card-lot-02.webp) type("image/webp") 1x,
+    url(../Images/card-lot-02@2.webp) type("image/webp") 2x,
+    url(../Images/card-lot-02.jpg) type("image/jpeg") 1x,
+    url(../Images/card-lot-02@2.jpg) type("image/jpeg") 2x
+  );
 }
 
 .lots__card-type-picture {
-  background-image: url(../images/card-lot-03.jpg);   
+  background-image: url(../Images/card-lot-03.jpg);
+
+  background-image: image-set(
+    url(../Images/card-lot-03.avif) type("image/avif") 1x,
+    url(../Images/card-lot-03@2.avif) type("image/avif") 2x,
+    url(../Images/card-lot-03.webp) type("image/webp") 1x,
+    url(../Images/card-lot-03@2.webp) type("image/webp") 2x,
+    url(../Images/card-lot-03.jpg) type("image/jpeg") 1x,
+    url(../Images/card-lot-03@2.jpg) type("image/jpeg") 2x
+  );
 }
+
+/* ========== МОБИЛЬНЫЕ ЭКРАНЫ ========== */
+
+@media (max-width: 768px) {
+  .lots__card-type-film {
+    background-image: url(../Images/card-lot-01-mobile.jpg);
+
+    background-image: image-set(
+      url(../Images/card-lot-01-mobile.avif) type("image/avif") 1x,
+      url(../Images/card-lot-01-mobile@2.avif) type("image/avif") 2x,
+      url(../Images/card-lot-01-mobile.webp) type("image/webp") 1x,
+      url(../Images/card-lot-01-mobile@2.webp) type("image/webp") 2x,
+      url(../Images/card-lot-01-mobile.jpg) type("image/jpeg") 1x,
+      url(../Images/card-lot-01-mobile@2.jpg) type("image/jpeg") 2x
+    );
+  }
+
+  .lots__card-type-book {
+    background-image: url(../Images/card-lot-02-mobile.jpg);
+
+    background-image: image-set(
+      url(../Images/card-lot-02-mobile.avif) type("image/avif") 1x,
+      url(../Images/card-lot-02-mobile@2.avif) type("image/avif") 2x,
+      url(../Images/card-lot-02-mobile.webp) type("image/webp") 1x,
+      url(../Images/card-lot-02-mobile@2.webp) type("image/webp") 2x,
+      url(../Images/card-lot-02-mobile.jpg) type("image/jpeg") 1x,
+      url(../Images/card-lot-02-mobile@2.jpg) type("image/jpeg") 2x
+    );
+  }
+
+  .lots__card-type-picture {
+    background-image: url(../Images/card-lot-03-mobile.jpg);
+
+    background-image: image-set(
+      url(../Images/card-lot-03-mobile.avif) type("image/avif") 1x,
+      url(../Images/card-lot-03-mobile@2.avif) type("image/avif") 2x,
+      url(../Images/card-lot-03-mobile.webp) type("image/webp") 1x,
+      url(../Images/card-lot-03-mobile@2.webp) type("image/webp") 2x,
+      url(../Images/card-lot-03-mobile.jpg) type("image/jpeg") 1x,
+      url(../Images/card-lot-03-mobile@2.jpg) type("image/jpeg") 2x
+    );
+  }
+}
+
 
 .lots__card-overlay {
     position: absolute;
