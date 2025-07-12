@@ -335,6 +335,9 @@ a {
 
 .lots__card {
     position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /* ========== ДЕСКТОП ========== */
@@ -438,9 +441,6 @@ a {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     padding-inline: 37px;
     padding-block: 50px;
     gap: 20px;
