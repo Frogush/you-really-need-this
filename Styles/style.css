@@ -586,6 +586,7 @@ a {
 
 .footer__social-media {
     display: flex;
+    align-items: flex-start;
     justify-self: flex-end;
     gap: 48px;
 }
@@ -595,6 +596,10 @@ a {
         order: 2;
         justify-self: center;
     }
+}
+
+.footer__social-media-icon {
+    display: block;
 }
 
 /* Hover and Focus */
@@ -642,4 +647,13 @@ a {
 .jumbotron__subline-button:focus-visible {
     outline: 1px solid #fff;
     outline-offset: 1px;
+}
+
+.footer__social-media-link:focus {
+    outline: none;
+}
+
+.footer__social-media-link:focus-visible {
+    border-radius: 50%;
+    outline: 1px solid #000;
 }
