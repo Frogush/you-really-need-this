@@ -3,6 +3,9 @@
 > Project **"Оно тебе надо"** is a fully responsive, semantic HTML/CSS-only layout.  
 > JavaScript is used solely to dynamically load the appropriate manifest based on the user's color scheme preferences (light/dark) to enhance UX.
 
+**🔗 [Live Demo on GitHub Pages](https://frogush.github.io/you-really-need-this/)**  
+**🎨 [Design in Figma](https://www.figma.com/design/465553XW5eo3l3lM2JAgDo/HTML-CSS-1?node-id=0-1&t=Vq8RAHJkkCHsz1Me-1)**
+
 ## Preview
 
 ![Project Preview](./Images/preview.png)
@@ -20,7 +23,7 @@ All layouts are implemented using only **HTML** and **CSS**, with minimal JavaSc
 
 It supports:
 - Adaptive image loading (`image-set`) for different formats (AVIF/WebP/JPEG) and screen types (mobile/desktop).
-- A **fluid** and **responsive** layout that adapts both through breakpoints and automatic element alignment — providing seamless support across screen sizes and platforms.
+- The layout combines adaptive and fluid responsiveness: On different device types (desktop vs. mobile), the site uses adaptive layout techniques — elements may change position, be resized, or hidden depending on screen type. Within a single device type (e.g., desktop or mobile), it uses a fluid responsive layout — elements automatically adjust to the screen width without changing the overall structure.
 - A **dark theme** for favicon and manifest — adapting to the user’s system preference.
 
 ---
@@ -33,8 +36,8 @@ It supports:
 - Manifest and favicons adapt to dark/light mode using `media="(prefers-color-scheme: ...)"`.
 
 #### 🧭 Header
-- Logo centered with Grid/Flexbox.
-- Custom horizontal navigation with no list markers.
+- Logo centered with Grid.
+- Custom horizontal navigation with alternating markers.
 - Contact block (`tel`, `mailto`) with semantic layout.
 
 #### 🖼 Jumbotron
@@ -43,7 +46,7 @@ It supports:
 - Subtitle and button aligned using Flexbox.
 
 #### 🎴 Lots Section
-- CSS Grid layout with responsive wrapping of cards.
+- CSS Flex layout with responsive wrapping of cards.
 - Semantic card components using `<article>`, `<h3>`, and `<p>`.
 - Hover overlay and descriptions included.
 
@@ -55,15 +58,6 @@ It supports:
 - Contact info reused via semantic tags.
 - Navigation list and social media icons via SVG sprite (`<use>`).
 - ARIA labels for accessibility.
-
----
-
-### 📱 Responsiveness & Adaptivity
-
-- **Responsive** layout with breakpoints and card wrapping.
-- **Fluid** behavior: elements align and shift automatically based on screen size, supporting a wide range of resolutions.
-- Adaptive images served with `image-set` in multiple formats for performance.
-- Layout adapts perfectly for mobile devices.
 
 ---
 
@@ -115,7 +109,7 @@ JavaScript используется исключительно для подкл
 
 Особенности:
 - Адаптивная загрузка изображений (`image-set`) для разных форматов (AVIF/WebP/JPEG) и устройств (десктоп/мобильные).
-- **Резиновая и адаптивная** вёрстка: автоматическое перераспределение элементов под размер экрана без жесткой привязки.
+- Вёрстка сочетает адаптивный и отзывчивый (fluid) подходы: При смене типа устройства (десктоп ↔ мобильное) используется адаптивная вёрстка — элементы могут менять расположение, масштабироваться или скрываться. В пределах одного устройства (например, только десктопа) применяется отзывчивая (fluid) вёрстка — элементы автоматически подстраиваются под ширину экрана, не меняя структуру.
 - Тёмная тема реализована для фавиконок и манифеста через `prefers-color-scheme`.
 
 ---
@@ -128,8 +122,8 @@ JavaScript используется исключительно для подкл
 - Манифест и фавиконки подгружаются в зависимости от темы пользователя.
 
 #### 🧭 Шапка
-- Логотип по центру (Grid/Flex).
-- Кастомное меню без маркеров.
+- Логотип по центру (Grid).
+- Кастомное меню с чередованием маркеров.
 - Контакты с использованием `tel:` и `mailto:`.
 
 #### 🖼 Jumbotron
@@ -138,7 +132,7 @@ JavaScript используется исключительно для подкл
 - Подзаголовок и кнопка выровнены по центру.
 
 #### 🎴 Секция лотов
-- Карточки выстроены через CSS Grid.
+- Карточки выстроены через CSS Flex.
 - Каждая карточка — семантический `<article>`.
 - Есть оверлей, описание и адаптивное поведение.
 
@@ -153,21 +147,12 @@ JavaScript используется исключительно для подкл
 
 ---
 
-### 📱 Адаптивность и отзывчивость
-
-- **Адаптивная вёрстка** с брейкпоинтами и переносом карточек.
-- **Резиновое поведение**: автоматическая адаптация под любой размер экрана.
-- Используется `image-set` для загрузки изображений в подходящем формате и разрешении.
-- Полная поддержка мобильных устройств.
-
----
-
 ### 🧪 Ключевые особенности
 
 - ✅ Семантическая вёрстка HTML5.
 - ✅ Раскладка через Grid и Flexbox.
 - ✅ Глобальные стили в отдельных CSS-файлах.
-- ✅ Респонсив + флюидная адаптация.
+- ✅ Респонсив + адаптивная вёрстка.
 - ✅ Адаптивная загрузка изображений (`image-set`).
 - ✅ Слои через `z-index`.
 - ✅ Настройка шрифтов (межбуквенное расстояние и пр.).
