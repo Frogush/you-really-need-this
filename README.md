@@ -3,7 +3,7 @@
 > Project **"Оно тебе надо"** is a fully responsive, semantic HTML/CSS-only layout.  
 > JavaScript is used solely to dynamically load the appropriate manifest based on the user's color scheme preferences (light/dark) to enhance UX.
 
-![Project Preview](./Images/card-lot-01.jpg)
+![Project Preview](./Images/preview.png)
 
 ---
 
