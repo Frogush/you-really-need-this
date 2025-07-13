@@ -5,8 +5,6 @@
 
 ## Preview
 
----
-
 ![Project Preview](./Images/preview.png)
 
 ---
